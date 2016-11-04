@@ -27,4 +27,4 @@ bundle install
 rails db:migrate
 rails server
 
-![alt tag](https://github.com/brenothales/encurtador_de_url/blob/master/app/assets/images/Captura%20de%20Tela%202016-11-04%20%C3%A0s%2020.28.26.png?raw=true)
+![alt tag](https://github.com/brenothales/encurtador_de_url/blob/master/app/assets/images/screenshort.png?raw=true)
