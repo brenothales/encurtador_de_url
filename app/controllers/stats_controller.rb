@@ -1,12 +1,15 @@
 class StatsController < ApplicationController
   before_action :set_stat, only: [:show, :edit, :update, :destroy, :shortened]
-
+  # respond_to :html, :json
   # GET /stats
   # GET /stats.json
   def index
     @stats = Stat.all
     @stat = Stat.new
-
+    respond_to do |format|
+      format.html
+      format.json
+    end
   end
 
   # GET /stats/1
