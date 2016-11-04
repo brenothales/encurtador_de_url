@@ -13,7 +13,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'font-awesome-sass'
-gem 'simple_form', github: 'plataformatec/simple_form'
+gem 'simple_form'
 gem 'autoprefixer-rails'
 gem "google_custom_search_api"
 
