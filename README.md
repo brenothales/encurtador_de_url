@@ -1,24 +1,30 @@
-# README
+# Um simples Encurtador de URL
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Objetivo da app é um teste de proeficiência para integrar umas das maiores empresas
+de e-commerce do Brasil ;)  
 
-Things you may want to cover:
+Antes de começar a desenvolver pensei em qual tecnologia, fiquei na entre Sinatra ou Ruby on Rails, escolhi RoR pois já esta na hora implementar algum projeto na sua atual 5º versão, e achei que fosse uma boa hora de migrar e descobrir o que há de novo.
 
-* Ruby version
 
-* System dependencies
+* Ruby 2.3.1
 
-* Configuration
+* Rails 5
 
-* Database creation
+* Database postgresql
 
-* Database initialization
+* Bootstrap 4 Alpha
 
-* How to run the test suite
+* Servidor (AWS Foi a primeira vez que fiz deploy no aws) Geralmente Heroku ou Servidor próprio
 
-* Services (job queues, cache servers, search engines, etc.)
+* Futuras melhorias na Api Resfull
 
-* Deployment instructions
+Quem for avaliar leve algumas considerações, claro que não cheguei 100% do desafio, esperem que gostei e fico grato pelo feedback.
 
-* ...
+
+git clone https://github.com/brenothales/encurtador_de_url.git
+cd encurtador_de_url
+bundle install
+rails db:migrate
+rails server
+
+![alt tag](https://github.com/brenothales/encurtador_de_url/blob/master/app/assets/images/Captura%20de%20Tela%202016-11-04%20%C3%A0s%2020.28.26.png?raw=true)
