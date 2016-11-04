@@ -1,0 +1,40 @@
+<br>
+<div class="jumbotron">
+  <h1 class="display-3">Simplifique seus links!</h1>
+  <hr class="my-2">
+  <p class="lead">Um simples encurtamento de URL, para facilitar o seu dia a dia, com a finalidade para um teste de dev Chaordic .</p>
+
+  <%= simple_form_for @stat, html: { class: "text-center" } do |f| %>
+  <%= f.input :url, as: :string, placeholder: "Insira sua url original aqui", label: false %>
+  <%= f.submit "Encurtar!", class: "btn btn-primary btn-lg" %>
+  <% end %>
+</div>
+<div class="row">
+  <div class="col-md-12 col-md-offset-6 ">
+    <div class="main-card table-responsive">
+      <h5 class="text-center">Suas Urls encurtadas</h5>
+      <div class="table-responsive">
+        <table class="table">
+          <thead class="thead-inverse">
+            <tr>
+              <th>Url original</th>
+              <th>Data da Criação</th>
+              <th>Url Encurtada</th>
+              <th>Hits</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @stats.each do |stat| %>
+            <tr>
+              <td> <%= link_to truncate(stat.url, length: 40), stat.url, title: stat.url %> </td>
+              <td><%= time_ago_in_words(stat.created_at) %> atrás</td>
+              <td><%=  "#{request.base_url}/#{stat.shorturl}"  %></td>
+              <td><span class="badge"><span class="clicks"><%= @stat.hits %></span></span> clicks</td>
+            </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

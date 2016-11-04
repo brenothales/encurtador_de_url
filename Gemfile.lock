@@ -195,7 +195,7 @@ PLATFORMS
 DEPENDENCIES
   autoprefixer-rails
   better_errors
-  bootstrap (~> 4.0.0.alpha5)
+  bootstrap (~> 4.0.0.alpha3)
   byebug
   coffee-rails (~> 4.2)
   figaro

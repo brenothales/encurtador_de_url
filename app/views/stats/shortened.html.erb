@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="form-card">
+    <h3 class="text-center">Ótimo! seu link foi encurtado, compartilhe agora!</h3>
+    <div class="row">
+      <form class="simple_form">
+        <div class="form-group string disabled">
+          <div class="col-md-6">
+            <label for="url" class="string disabled control-label">
+              Sua URL Original
+            </label>
+            <input type="text" class="align-center string disabled form-control" id="url" disabled="disabled" value="<%= @stat.url %>">
+          </div>
+          <div class="col-md-6">
+            <label for="url" class="string disabled control-label">
+              Sua URL Encurtada
+            </label>
+            <input type="text" class="string form-control" id="shorturl" value='<%= "#{request.base_url}/#{@stat.shorturl}" %>'>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <br>
+  <%= link_to 'Voltar', root_path, class:"btn btn-primary" %>
+</div>
