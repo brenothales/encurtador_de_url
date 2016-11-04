@@ -4,6 +4,8 @@ Objetivo da aplicação é um teste de proficiência para integrar em uma time d
 
 Antes de começar a desenvolver pensei em qual tecnologia, fiquei entre Sinatra ou Ruby on Rails, escolhi RoR pois já esta na hora implementar algum projeto na sua atual 5º versão, e achei que fosse uma boa hora de migrar e descobrir o que há de novo.
 
+http://chaordic-env.uh5pf3rkr7.us-west-2.elasticbeanstalk.com/
+
 ## Tecnologias
 * Ruby 2.3.1
 
